@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONTAWESOME CSS FILE -->
+    <link href="./css/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- STYLE CSS FILE -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- TITLE -->
+    <title>Login - MPA</title>
+</head>
+
+<body id="login">
+    <section id="description">
+        <i class="far fa-lightbulb"></i>
+        <div>
+            <ul class="titles">
+                <li class="title active">
+                    Profesor
+                </li>
+                <li class="title">
+                    Jefe de Departamento
+                </li>
+                <li class="title">
+                    Coordinador de Tecnología
+                </li>
+                <li class="title">
+                    Coordinador de Compras
+                </li>
+                <li class="title">
+                    Administrador de Soporte
+                </li>
+            </ul>
+
+            <ul class="messages">
+                <li class="message active">
+                        Puedes ver tus clases, clasificar los software que necesitas o no necesitas para cada una, además de solicitar agregar uno nuevo. Podrás recibir notificación de la revisión de tus requerimientos. </br></br>
+                        Haz comentarios, organiza y lleva el control del proceso MPA de tus clases.
+                </li>
+                <li class="message">
+                        Lleva el control del proceso MPA de cada clase que pertenece al departamento. Encuentra el consolidado de los requerimientos del departamento, aprueba o edita las solicitudes. Envía al coordinador de tecnología.
+                </li>
+                <li class="message">
+                        Lleva el control del proceso MPA de cada departamento. Clasifica y autoriza los requerimientos de los departamentos. Envía el reporte al Coordinador de compras.
+                </li>
+                <li class="message">
+                        Recibe el consolidado de software solicitados para comprar. Accede al presupuesto y autoriza las compras con respecto a este. Actualiza y envía el informe al Coordinador de tecnología.
+                </li>
+                <li class="message">
+                        Recibe el consolidad de los requerimientos de software de todos los departamentos. Encuentra los software a eliminar, mantener, actualizar y agregar.
+                </li>
+            </ul>
+
+            <ui class="indicators">
+                <li class="indicator active"></li>
+                <li class="indicator"></li>
+                <li class="indicator"></li>
+                <li class="indicator"></li>
+                <li class="indicator"></li>
+            </ui>
+
+            <i class="fas fa-chevron-left arrow left" id="leftArrow"></i>
+            <i class="fas fa-chevron-right arrow right" id="rightArrow"></i>
+        </div>
+    </section>
+    <section id="form">
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="logo">
+        </div>
+        <form onsubmit="return false;">
+            <p>Bienvenido al sistema de MPA</p>
+            <input type="hidden" id="verification" value="123456">
+            <div class="formItem">
+                <label for="">Identificación</label>
+                <input type="text" id="idInput" placeholder="Identificación" required>
+            </div>
+
+            <div class="formItem">
+                <label for="">Contraseña</label>
+                <input type="password" id="passInput" placeholder="•••••••••" required>
+            </div>
+
+            <div class="formItem">
+                <label for="">Identificación</label>
+                <select name="tipo" id="typeSelect" required>
+                    <option value="" selected disabled>Selecciona tu rol...</option>
+                    <option value="profe">Profesor</option>
+                    <option value="dpto">Jefe de Departamento</option>
+                    <option value="tech">Coordinador de Tecnología</option>
+                    <option value="compras">Coordinador de Compras</option>
+                    <option value="soporte">Administrador de Soporte</option>
+                </select>
+            </div>
+
+            <a href="#">Olvide mi contraseña</a>
+
+            <button id="loginBtn">Entrar</button>
+        </form>
+        <img class="logoOperaciones" src="./images/logo.png" alt="logo Operaciones">
+    </section>
+</body>
+
+<script src="./js/login.js"></script>
+
+</html>

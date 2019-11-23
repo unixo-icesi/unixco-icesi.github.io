@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONTAWESOME CSS FILE -->
+    <link href="../css/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- STYLE CSS FILE -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- TITLE -->
+    <title>MPA Profesor</title>
+</head>
+
+<body>
+    <section class="topBar">
+        <h1 class="name">Jose Andrés Moncada</h1>
+        <div class="actions">
+            <i class="fas fa-cog settings"></i>
+            <i class="fas fa-bell notifications">
+                    <ul class="notificationsPanel">
+                        <li class="notification">
+                            <img src="../images/ppCompras.png" alt="pp">
+                            <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                    3.3.5</b>
+                                </br>
+                                <a>Hace 4 Días</a>
+                            </p>
+                        </li>
+                        <li class="notification">
+                            <img src="../images/ppCompras.png" alt="pp">
+                            <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                    3.3.5</b>
+                                </br>
+                                <a>Hace 4 Días</a>
+                            </p>
+                        </li>
+                        <li class="notification">
+                            <img src="../images/ppCompras.png" alt="pp">
+                            <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                    3.3.5</b>
+                                </br>
+                                <a>Hace 4 Días</a>
+                            </p>
+                        </li>
+                        <li class="notification">
+                            <img src="../images/ppCompras.png" alt="pp">
+                            <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                    3.3.5</b>
+                                </br>
+                                <a>Hace 4 Días</a>
+                            </p>
+                        </li>
+    
+                    </ul>
+                </i>
+        </div>
+        <img src="../images/pp.png" alt="pp" class="profile">
+    </section>
+
+    <section id="sideBar" class="closed">
+            <div class="action" id="burguer">
+                <i class="fas fa-bars"></i>
+                <span>Cerrar</span>
+            </div> 
+            <ul class="menu">
+                <a href="home.html" class="item">
+                    <i class="fas fa-university"></i>
+                    <span>Departamentos</span>
+                </a>
+                <a href="departamento.html" class="item selected">
+                    <i class="fas fa-book"></i>
+                    <span>Clases</span>
+                </a>
+            </ul>
+            <a href="../" class="action">
+                <i class="fas fa-door-open"></i>
+                <span>Cerrar Sesión</span>
+            </a>
+        </section>
+
+    <section id="dashboard">
+        <h1 class="title">Departamento de TICS</h1>
+        <article class="decision notNeeded">
+            <h1 class="name">No lo Necesito</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+        </article>
+        <article class="decision actual">
+            <h1 class="name">Software Actual</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+            <div class="buttonHolder">
+                <a href="clasePopUpEnviar.html">Enviar</a>
+            </div>
+        </article>
+        <article class="decision needed">
+            <h1 class="name">Lo Necesito</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+            <div class="buttonHolder">
+                <a href="clasePopUpNuevo.html">Agregar Nuevo</a>
+            </div>
+        </article>
+        <section id="popUpConfirm">
+            <article class="modal">
+                <h1 class="title">Confirmación MPA</h1>
+                <a class="close" href="javascript:history.back()"><i class="fas fa-times"></i></a>
+                <section class="prev">
+                    <article>
+                        <p>Eliminar</p>
+                        <div></div>
+                        <ul class="softwares">
+                            <li class="software">
+                                <img src="../images/androidStudioIcon.png" alt="icon">
+                                <p>Android Studio</p>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <p>Mantener</p>
+                        <div></div>
+                        <ul class="softwares">
+                        </ul>
+                    </article>
+
+                    <article>
+                        <p>Agregar</p>
+                        <div></div>
+                        <ul class="softwares">
+                        </ul>
+                    </article>
+                </section>
+                <a class="button" href="clasePopUpEnviar.html">Enviar</a>
+            </article>
+        </section>
+    </section>
+
+    <script src="../js/main.js"></script>
+    
+</body>
+
+</html>

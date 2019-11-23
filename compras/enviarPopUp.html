@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONTAWESOME CSS FILE -->
+    <link href="../css/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- STYLE CSS FILE -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- TITLE -->
+    <title>Compras - MPA</title>
+</head>
+
+<body>
+    <section class="topBar">
+        <h1 class="name">Coordinador de Compras</h1>
+        <div class="actions">
+            <i class="fas fa-cog settings"></i>
+            <i class="fas fa-bell notifications">
+                <ul class="notificationsPanel">
+                    <li class="notification">
+                        <img src="../images/ppJefe.png" alt="pp">
+                        <p><b>El jefe de departamento</b> ha enviado un requrimiento nuevo: <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppJefe.png" alt="pp">
+                        <p><b>El jefe de departamento</b> ha enviado un requrimiento nuevo: <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppJefe.png" alt="pp">
+                        <p><b>El jefe de departamento</b> ha enviado un requrimiento nuevo: <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppJefe.png" alt="pp">
+                        <p><b>El jefe de departamento</b> ha enviado un requrimiento nuevo: <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+
+                </ul>
+            </i>
+        </div>
+        <img src="../images/ppCompras.png" alt="pp" class="profile">
+    </section>
+
+    <section id="sideBar" class="closed">
+        <div class="action" id="burguer">
+            <i class="fas fa-bars"></i>
+            <span>Cerrar</span>
+        </div>
+        <ul class="menu">
+            <a href="home.html" class="item selected">
+                <i class="fas fa-tasks"></i>
+                <span>Softwares</span>
+            </a>
+            <a href="presupuesto.html" class="item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Presupuesto</span>
+            </a>
+        </ul>
+        <a href="../" class="action">
+            <i class="fas fa-door-open"></i>
+            <span>Cerrar Sesión</span>
+        </a>
+    </section>
+
+    <section id="dashboard">
+        <article class="decision notNeeded">
+            <h1 class="name">Software No Aprobado</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+                <li class="software">
+                    <a href="home.html"><i class="fas fa-chevron-left leftArrow"></i></a>
+                    <img src="../images/androidStudioIcon.png" alt="icon">
+                    <p class="softName">Android Studio</p>
+                    <p class="version">v. 9</p>
+                    <a href="home.html"><i class="fas fa-chevron-right rightArrow"></i></a>
+                    <i class="fas fa-comment comment"></i>
+                </li>
+            </ul>
+        </article>
+        <article class="decision actual">
+            <h1 class="name">Nuevo Software Requerido</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+            <div class="buttonHolder done">
+                <a href="#">Enviar</a>
+            </div>
+        </article>
+        <article class="decision needed">
+            <h1 class="name">Software Aprobado</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+        </article>
+        <section id="popUpSend">
+                <article class="modal">
+                    <h1 class="title">Confirmación MPA</h1>
+                    <a class="close" href="javascript:history.back()"><i class="fas fa-times"></i></a>
+                    <img src="../images/correctIcon.png" alt="">
+                    <h1>Actualización enviada correctamente</h1>
+                    <a class="button" href="homeFull.html">Cerrar</a>
+                </article>
+            </section>
+    </section>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

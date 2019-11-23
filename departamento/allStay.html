@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONTAWESOME CSS FILE -->
+    <link href="../css/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- STYLE CSS FILE -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- TITLE -->
+    <title>MPA Profesor</title>
+</head>
+
+<body>
+    <section class="topBar">
+        <h1 class="name">Jefe de Departamento</h1>
+        <div class="actions">
+            <i class="fas fa-cog settings"></i>
+            <i class="fas fa-bell notifications">
+                <ul class="notificationsPanel">
+                    <li class="notification">
+                        <img src="../images/ppCompras.png" alt="pp">
+                        <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppCompras.png" alt="pp">
+                        <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppCompras.png" alt="pp">
+                        <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+                    <li class="notification">
+                        <img src="../images/ppCompras.png" alt="pp">
+                        <p><b>Tu jefe de departamento</b> no ha aceptado la actualización del software <b>Processing
+                                3.3.5</b>
+                            </br>
+                            <a>Hace 4 Días</a>
+                        </p>
+                    </li>
+
+                </ul>
+            </i>
+        </div>
+        <img src="../images/ppJefe.png" alt="pp" class="profile">
+    </section>
+
+    <section id="sideBar" class="closed">
+        <div class="action" id="burguer">
+            <i class="fas fa-bars"></i>
+            <span>Cerrar</span>
+        </div>
+        <ul class="menu">
+            <a href="sinProfesor.html" class="item">
+                <i class="fas fa-user-lock"></i>
+                <span>Clases Sin Profesor</span>
+            </a>
+            <a href="home.html" class="item">
+                <i class="fas fa-book"></i>
+                <span>Clases</span>
+            </a>
+            <a href="allStay.html" class="item selected">
+                <i class="fas fa-tasks"></i>
+                <span>Softwares</span>
+            </a>
+        </ul>
+        <a href="../" class="action">
+            <i class="fas fa-door-open"></i>
+            <span>Cerrar Sesión</span>
+        </a>
+    </section>
+
+    <section id="dashboard">
+        <article class="decision-4 depDelete">
+            <h1 class="name">Eliminar</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+        </article>
+        <article class="decision-4 depStay">
+            <h1 class="name">Mantener</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+                <li class="software">
+                    <a href="allDelete.html"><i class="fas fa-chevron-left leftArrow"></i></a>
+                    <img src="../images/androidStudioIcon.png" alt="icon">
+                    <p class="softName">Android Studio</p>
+                    <p class="version">v. 9</p>
+                    <i class="fas fa-comment comment">
+                        <article class="reason">
+                            <p class="title">Justificación</p>
+                            <p class="content">“Última versión tiene muchos errores”</p>
+                        </article>
+                    </i>
+                    <a href="allUpgrade.html"><i class="fas fa-chevron-right rightArrow"></i></a>
+                </li>
+            </ul>
+        </article>
+        <article class="decision-4 depUpdate">
+            <h1 class="name">Actualizar</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+        </article>
+        <article class="decision-4 depAdd">
+            <h1 class="name">Agregar</h1>
+            <div class="separator"></div>
+            <ul class="softwares">
+            </ul>
+            <div class="buttonHolder done">
+                <a href="clasePopUpNuevo.html">Agregar Nuevo</a>
+            </div>
+        </article>
+        <div id="btnEnviar">
+            <a href="allStayPopUp.html">Enviar</a>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
