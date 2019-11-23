@@ -1,1 +1,1 @@
-# unixco-icesi.github.io
+# unixo-icesi.github.io
